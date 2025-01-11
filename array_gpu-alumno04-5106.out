@@ -1,0 +1,29 @@
+
+Running with 5000000 elements.
+
+ Time taken by reduction operation using a function: 263 ms ± 287 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result of the sum of numbers in the range [0, value) is: 12499997500000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Time taken by reduction operation using numpy.sum(): 1.34 ms ± 225 ns per loop (mean ± std. dev. of 2 runs, 1,000 loops each)
+Now, the result using numpy.sum(): 12499997500000.0 
+ 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Time taken by reduction operation using numpy.ndarray.sum(): 1.33 ms ± 702 ns per loop (mean ± std. dev. of 2 runs, 1,000 loops each)
+Now, the result using numpy.ndarray.sum(): 12499997500000.0 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Suma utilizando Cupy:
+Resultado: 12499997500000.0, Tiempo: 0.383092 segundos
+
+---------------------------------------------------------------------
+
+
+Suma utilizando una ufunc personalizada:
+Suma total con np.sum y datos transferidos de CUDA: 0.0, Tiempo: 0.006824 segundos
+---------------------------------------------------------------------
+
