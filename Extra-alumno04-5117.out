@@ -1,0 +1,56 @@
+
+Running with 100000000 elements.
+
+ Time taken by reduction operation using a function: 5.33 s ± 7.75 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result of the sum of numbers in the range [0, value) is: 4999999950000000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Time taken by reduction operation using numpy.sum(): 35.8 ms ± 44.3 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Now, the result using numpy.sum(): 4999999950000000.0 
+ 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Time taken by reduction operation using numpy.ndarray.sum(): 35.7 ms ± 45.7 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Now, the result using numpy.ndarray.sum(): 4999999950000000.0 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Suma utilizando multiprocessing:
+
+ Time taken by reduction operation using 1 process(es): 6.304701805114746
+And the result of the sum using 1 process(es) is: 4999999950000000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Time taken by reduction operation using 2 process(es): 3.42557430267334
+And the result of the sum using 2 process(es) is: 4999999950000000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Time taken by reduction operation using 4 process(es): 3.2989816665649414
+And the result of the sum using 4 process(es) is: 4999999950000000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Suma utilizando Cupy:
+
+ Time taken by reduction operation using Cupy:
+Resultado de la suma en la GPU (devuelto a la CPU): 4999999950000000.0
+Tiempo total (incluyendo transferencia de datos): 3.298982 segundos
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Suma utilizando una ufunc personalizada:
+
+ Time taken by reduction operation using Numba @cuda.reduce:
+Resultado de la suma calculado en la GPU: 5000025369214976.0
+Tiempo total: 0.235991 segundos
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
